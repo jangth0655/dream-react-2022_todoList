@@ -1,0 +1,14 @@
+.profile {
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ebebeb;
+  -webkit-box-shadow: -1px 6px 15px -3px #000000;
+  box-shadow: -1px 6px 15px -3px #000000;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.profile:last-child {
+  margin-bottom: 0;
+}
