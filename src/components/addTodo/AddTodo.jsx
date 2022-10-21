@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 } from "uuid";
 
 const AddTodo = ({ onAdd }) => {
   const [text, setText] = useState("");
@@ -14,7 +15,7 @@ const AddTodo = ({ onAdd }) => {
     if (text.trim() === "") {
       return;
     }
-    onAdd({ id: Date.now(), text, status: "active" });
+    onAdd({ id: v4(), text, status: "active" });
     setText("");
   };
 
