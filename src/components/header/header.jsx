@@ -1,10 +1,17 @@
+import styles from "./header.module.css";
+
 const Header = ({ filters, filter, onFilterChange }) => {
   return (
-    <header>
-      <ul>
+    <header className={styles.header}>
+      <ul className={styles.filters}>
         {filters.map((f, i) => (
           <li key={i}>
-            <button onClick={() => onFilterChange(f)}>{f}</button>
+            <button
+              className={`${styles.filter} ${filter === f && styles.selected}`}
+              onClick={() => onFilterChange(f)}
+            >
+              {f}
+            </button>
           </li>
         ))}
       </ul>
