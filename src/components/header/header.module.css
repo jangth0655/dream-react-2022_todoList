@@ -7,6 +7,19 @@
   padding: 1rem;
 }
 
+.toggle {
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all 150ms ease-out;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
 .filters {
   display: flex;
 }
